@@ -90,7 +90,9 @@ if (outMA==="Freiherr-vom-stein-gruppe") {
 //	document.getElementById("Gruß").innerHTML = "Ela";
              }
       
-           
+       if(outName="Justin"){
+       document.getElementById("Gruß").innerHTML = "Mama & Papa";
+       }    
 
 
 
