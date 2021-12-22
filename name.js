@@ -66,7 +66,7 @@ function decode(){
       Decodiert = Decodiert + alleZeichen.charAt(Stelle);}
   }
     let outMA = ucFirst(Decodiert);
-alert(outMA);
+
 if (outMA==="Freiherr-vom-stein-gruppe") {
 	outMA="Freiherr-vom-Stein-Gruppe";
 }
