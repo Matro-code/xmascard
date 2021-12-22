@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frohe Weihnachten!</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet" />
+    <style>
+      embed {
+          font-size: 10px;
+          max-width:100%;
+          //height: auto; 
+      }
+      </style>
+
+  </head>
+  <body>
+
+<audio id="player">
+   <source src="xmas.mp3" type="audio/mpeg">
+</audio>
+
+<img src="Sound_off.gif" name="playbutton" width="102" height="99" id="playbutton" title="Abspielen" style="cursor: pointer" onClick="abspielen()"
+ onMouseover="playbutton.src='Sound_on.gif'" onMouseout="playbutton.src='Sound_off.gif'"/>
+<img src="sound_on.gif" name="pausebutton" width="102" height="99" id="pausebutton" title="Pause" style="display: none; cursor: pointer" onClick="pausieren()"
+ onMouseover="pausebutton.src='Sound_off.gif'" onMouseout="pausebutton.src='Sound_on.gif'"/>    
+
+<script type="text/javascript">
+    function abspielen()
+    {
+       document.getElementById("player").play();
+       document.getElementById("pausebutton").style.display = "";
+       document.getElementById("playbutton").style.display = "none";
+    }
+    function pausieren()
+    {
+       document.getElementById("player").pause();
+       document.getElementById("playbutton").style.display = "";
+       document.getElementById("pausebutton").style.display = "none";
+    }
+  
+ </script>
+
+  
+    <h1 class="heading">Frohe Weihnachten, <span id="name"></span> !</h1>
+    <a href="#content" id="los">&#8681;</a>
+    <div style="height: 100vh"></div>
+    
+    <div id="content">
+     <script>
+     </script>     
+
+     <embed  id="MAtext" src="" width = "400" height ="250"  /> 
+     
+      <img id="bild" src="Bild1.jpg" />
+      
+
+      <h2 id="Gruß">Ela & Manni</h2>
+      </div>
+    <script src="name.js"></script>
+    <script src="schnee.js"></script>
+       
+    </body>
+</html>
