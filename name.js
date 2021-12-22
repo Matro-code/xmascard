@@ -1,4 +1,4 @@
-const name = getNameFromUrl() || "Blockfertigung";
+const name = getNameFromUrl() || "Unbekannter";
 
 const nameEle = document.getElementById("name");
 // new_1
@@ -90,7 +90,7 @@ if (outMA==="Freiherr-vom-stein-gruppe") {
 //	document.getElementById("Gruß").innerHTML = "Ela";
              }
       
-       if(outName="Justin"){
+       if(outName==="Justin"){
        document.getElementById("Gruß").innerHTML = "Mama & Papa";
        }    
 
